@@ -53,7 +53,15 @@ public class Main {
                     else
                         System.out.println(b + " is not a prime number.");
                 break;
+                case 4:
+                    System.out.print("Enter a number: ");
+                    b = s.nextInt();
 
+                    if(b % 2 == 0)
+                        System.out.println(b + " is even");
+                    else
+                        System.out.println(b + " is odd");
+                    break;
 
             }
         }while(a!=6);
