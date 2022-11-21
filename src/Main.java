@@ -5,7 +5,7 @@ public class Main {
 
         int a,b,c,d,result;
         Scanner s=new Scanner(System.in);
-        System.out.println("1.Find largest number\n2.Find smallest number\n3.Prime number or Not\n4.Even or Not\n5.Find reverse");
+        System.out.println("1.Find largest number\n2.Find smallest number\n3.Prime number or Not\n4.Even or Not\n5.Find reverse\n6.Exit");
         System.out.println("Enter your choice:");
         a=s.nextInt();
         do {
@@ -72,6 +72,12 @@ public class Main {
                     }
 
                     System.out.println("Reversed Number: " + reversed);
+                    break;
+                case 6:
+                    System.out.println("Exit");
+                    break;
+                default:
+                    System.out.println("Invalid entry");
                     break;
 
 
