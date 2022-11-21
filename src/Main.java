@@ -62,6 +62,18 @@ public class Main {
                     else
                         System.out.println(b + " is odd");
                     break;
+                case 5:
+                    int reversed = 0;
+                    System.out.print("Enter a 3 digit number: ");
+                    b = s.nextInt();
+                    for(;b != 0; b /= 10) {
+                        int digit = b % 10;
+                        reversed = reversed * 10 + digit;
+                    }
+
+                    System.out.println("Reversed Number: " + reversed);
+                    break;
+
 
             }
         }while(a!=6);
