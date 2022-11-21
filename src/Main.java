@@ -8,7 +8,23 @@ public class Main {
         System.out.println("1.Find largest number\n2.Find smallest number\n3.Prime number or Not\n4.Even or Not\n5.Find reverse");
         System.out.println("Enter your choice:");
         a=s.nextInt();
-
+        do {
+            switch (a) {
+                case 1:
+                    System.out.println("enter 3 number");
+                    b = s.nextInt();
+                    c = s.nextInt();
+                    int d = s.nextInt();
+                    if(b>c & b>d){
+                        System.out.println(b+" is the largest number");
+                    } else if (c>d) {
+                        System.out.println(c+" is the largest number");
+                    }else {
+                        System.out.println(d+" is the largest number");
+                    }
+                    break;
+            }
+        }while(a!=6);
     }
 
 }
