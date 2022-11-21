@@ -36,6 +36,24 @@ public class Main {
                         System.out.println(d+" is the smallest number");
                     }
                     break;
+                case 3:
+                    System.out.println("enter a number");
+                    b = s.nextInt();
+                    boolean flag =false;
+                    for (int i = 2; i <= b / 2; ++i) {
+                        // condition for nonprime number
+                        if (b % i == 0) {
+                            flag = true;
+                            break;
+                        }
+                    }
+
+                    if (!flag)
+                        System.out.println(b + " is a prime number.");
+                    else
+                        System.out.println(b + " is not a prime number.");
+                break;
+
 
             }
         }while(a!=6);
